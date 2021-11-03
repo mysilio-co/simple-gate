@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image';
+import { FacebookIcon, InstagramIcon, TwitterIcon, GithubIcon, DribbleIcon } from '../components/icons' 
+
 let headerImage = "http://picsum.photos/1360/544";
 let profileImage = "http://picsum.photos/176/176";
 let articleImage = "http://picsum.photos/456/384";
+let profileLinkImage = "http://picsum.photos/280/288";
 
 export default function Home() {
   return (
@@ -55,7 +58,7 @@ export default function Home() {
               <div className="py-3 text-gray-400">
                 <bold className="text-my-green font-bold">Created</bold> 4/24/21 <bold className="text-my-green font-bold ml-2">Last Edited</bold> 4:22 PM 5/19/21
               </div>
-              <button className="mt-4  w-36 py-2 rounded border border-my-green text-center text-my-green">
+              <button className="mt-4 w-36 py-2 rounded border border-my-green text-center text-my-green">
                 Read More
               </button>
             </div>
@@ -65,43 +68,95 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col bg-my-green text-white w-screen items-left text-left mt-16 items-center">
-          <div className="flex flex-col p-14 max-w-4xl">
+          <div className="flex flex-col p-14 w-3/5">
             <h1 className="text-5xl font-bold">
               Check out my other shit 
             </h1>
             <span className="text-sm mt-4 opacity-80">
             Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
             </span>
-            <button className="text-left mt-6">
+            <button className="mt-10 text-center w-36 py-2 rounded-full border-2 bg-white bg-opacity-20">
               Subscribe
             </button>
           </div>
           <div className="flex flex-row">
-            <div className="flex flex-wrap items-center justify-around ml-6 h-xl sm:w-full">
-              <a
-                href="https://nextjs.org/docs"
-                className="p-6 mt-6 text-left border w-72 rounded-xl hover:text-blue-600 focus:text-blue-600"
-              >
-                <h3 className="text-2xl font-bold">My Etsy Store</h3>
-                <button className="">
-                 Visit 
-                </button>
-              </a>
+            <div className="flex flex-col justify-around ml-6 h-xl sm:w-full">
+              <div className="flex">
+                <Image className="rounded-xl z-0" src={profileLinkImage} width="280" height="288"/> 
+              </div>
+              <div className="-mt-20 py-4 z-10 font-bold bg-white bg-opacity-5 backdrop-blur-sm">
+                <h3 className="text-2xl ml-8">My Etsy Store</h3>
+              </div>
+              <div className="bg-white rounded-b-xl text-my-green z-10 text-left p-3 w-full">
+                <a
+                  href="https://nextjs.org/docs"
+                  className="ml-5">
+                Visit 
+                </a>
+              </div>
             </div>
-            <div className="flex flex-wrap items-center justify-around max-w-4xl ml-6 sm:w-full">
-              <a
-                href="https://nextjs.org/docs"
-                className="p-6 mt-6 text-left border w-72 rounded-xl hover:text-blue-600 focus:text-blue-600"
-              >
-                <h3 className="text-2xl font-bold">My Amazon Wishlist</h3>
-                <button className="">
-                 Visit 
-                </button>
-              </a>
+            <div className="flex flex-col justify-around ml-6 h-xl sm:w-full">
+              <div className="flex">
+                <Image className="rounded-xl z-0" src={profileLinkImage} width="280" height="288"/> 
+              </div>
+              <div className="-mt-20 py-4 z-10 font-bold bg-white bg-opacity-5 backdrop-blur-sm">
+                <h3 className="text-2xl ml-8">My Etsy Store</h3>
+              </div>
+              <div className="bg-white rounded-b-xl text-my-green z-10 text-left p-3 w-full">
+                <a
+                  href="https://nextjs.org/docs"
+                  className="ml-5">
+                Visit 
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col justify-around ml-6 h-xl sm:w-full">
+              <div className="flex">
+                <Image className="rounded-xl z-0" src={profileLinkImage} width="280" height="288"/> 
+              </div>
+              <div className="-mt-20 py-4 z-10 font-bold bg-white bg-opacity-5 backdrop-blur-sm">
+                <h3 className="text-2xl ml-8">My Etsy Store</h3>
+              </div>
+              <div className="bg-white rounded-b-xl text-my-green z-10 text-left p-3 w-full">
+                <a
+                  href="https://nextjs.org/docs"
+                  className="ml-5">
+                Visit 
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col justify-around ml-6 h-xl sm:w-full">
+              <div className="flex">
+                <Image className="rounded-xl z-0" src={profileLinkImage} width="280" height="288"/> 
+              </div>
+              <div className="-mt-20 py-4 z-10 font-bold bg-white bg-opacity-5 backdrop-blur-sm">
+                <h3 className="text-2xl ml-8">My Etsy Store</h3>
+              </div>
+              <div className="bg-white rounded-b-xl text-my-green z-10 text-left p-3 w-full">
+                <a
+                  href="https://nextjs.org/docs"
+                  className="ml-5">
+                Visit 
+                </a>
+              </div>
             </div>
           </div>
           <div className="flex flex-row p-20">
-            facebook insta twitta github dribble
+            <div className="h-12 w-12">
+              <FacebookIcon /> 
+            </div>
+            <div className="h-12 w-12 ml-12">
+              <InstagramIcon /> 
+            </div>
+            <div className="h-12 w-12 ml-12">
+              <TwitterIcon /> 
+            </div>
+            <div className="h-12 w-12 ml-12">
+              <GithubIcon /> 
+            </div>
+            <div className="h-12 w-12 ml-12">
+              <DribbleIcon /> 
+            </div>
           </div>
         </div>
       </main>
